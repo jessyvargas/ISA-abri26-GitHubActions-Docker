@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ titulo }}</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #7bcf9b, #3fa66b, #1f7a4a);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #263238;
+        }
+
+        .card {
+            width: 90%;
+            max-width: 900px;
+            background: #f8faf9;
+            padding: 50px 60px;
+            border-radius: 24px;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+        }
+
+        .titulo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 34px;
+            color: #2f3a35;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .badge {
+            background: #17251d;
+            color: #bdf5cf;
+            padding: 7px 13px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .linea {
+            width: 470px;
+            height: 3px;
+            background: #43a047;
+            margin: 0 auto 40px auto;
+            border-radius: 20px;
+        }
+
+        .info {
+            background: #ffffff;
+            padding: 24px 28px;
+            border-radius: 16px;
+            border-left: 4px solid #43a047;
+            box-shadow: 0 10px 25px rgba(67, 160, 71, 0.12);
+            margin-bottom: 35px;
+        }
+
+        .info p {
+            font-size: 18px;
+            color: #5f6f67;
+            margin: 12px 0;
+        }
+
+        .info strong {
+            color: #2d3a34;
+        }
+
+        .puerto {
+            background: #1f2d25;
+            color: #9be7b3;
+            padding: 5px 13px;
+            border-radius: 7px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .descripcion {
+            text-align: center;
+            color: #60746a;
+            font-size: 17px;
+            margin-top: 25px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 35px;
+            color: #9aa8a0;
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+            .card {
+                padding: 35px 25px;
+            }
+
+            .titulo {
+                flex-direction: column;
+            }
+
+            h1 {
+                font-size: 27px;
+                text-align: center;
+            }
+
+            .linea {
+                width: 85%;
+            }
+
+            .info p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="card">
+        <div class="titulo">
+            <h1>{{ titulo }}</h1>
+            <span class="badge">Flask + Python</span>
+        </div>
+
+        <div class="linea"></div>
+
+        <section class="info">
+            <p>✅ Servidor web desarrollado con <strong>Flask</strong>.</p>
+            <p>🌐 Puerto de escucha: <span class="puerto">5000</span></p>
+            <p>👩‍💻 Proyecto creado por <strong>Jessenia V</strong>.</p>
+            <p>🧩 Esta página se sirve dinámicamente desde el backend Flask.</p>
+        </section>
+
+        <p class="descripcion">
+            ⚡ HTML + CSS básico, con diseño responsive y gradiente en tonos verdes.
+        </p>
+
+        <footer>
+            Jessenia V · Python con Flask · Puerto 5000
+        </footer>
+    </main>
+
+</body>
+</html>
